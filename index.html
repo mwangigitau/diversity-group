@@ -367,7 +367,8 @@
                 {/* Form (Right) */}
                 <div className="lg:col-span-3 p-10 bg-white">
                   <h3 className="text-2xl font-bold text-slate-800 mb-6">Send us a message</h3>
-                  <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="c18651fc-3844-4d42-a17b-6e4e96ac00c0">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2"><label className="text-sm font-semibold text-slate-700">Full Name</label><input type="text" className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-teal-100 outline-none transition-all" placeholder="John Doe" /></div>
                       <div className="space-y-2"><label className="text-sm font-semibold text-slate-700">Email Address</label><input type="email" className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-teal-100 outline-none transition-all" placeholder="john@company.com" /></div>
